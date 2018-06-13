@@ -1,2 +1,4 @@
 # bake-framework
-Bake up the world
+Procedural Generation API
+
+Elixir Platform using Phoenix
