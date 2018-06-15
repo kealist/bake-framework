@@ -8,6 +8,23 @@ Elixir Platform using Phoenix
 
 Make sure to have PostgreSQL installed.
 
+
+
+To start the Phoenix server:
+
+  * Install dependencies with `mix deps.get`
+  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Install Node.js dependencies with `cd assets && npm install`
+  * Start Phoenix endpoint with `mix phx.server`
+
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+## For Dev
+
+Change the username / password in `config/dev.exs` to match your postgres installation
+
+## For Production
+
 Create a `config/prod.secret.exs` of the form below but with a unique secret key base and the PostgreSQL username/password info.
 ```
 use Mix.Config
@@ -31,12 +48,3 @@ config :bake, Bake.Repo,
   database: "bake_prod",
   pool_size: 15
 ```
-
-To start the Phoenix server:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
